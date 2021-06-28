@@ -52,6 +52,7 @@ void Red()
 void Green()
 {
     squareRend.material.SetColor("_Color", Color.green);
+    Debug.Log("i said something");
 }
 void Blue()
 {
