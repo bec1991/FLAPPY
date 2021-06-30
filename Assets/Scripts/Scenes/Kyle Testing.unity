@@ -324,9 +324,16 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/Scripts/Scenes/Kyle Testing.unity
   - component: {fileID: 1859603908}
   - component: {fileID: 1859603907}
   - component: {fileID: 1859603906}
+=======
+  - component: {fileID: 2072560365}
+  - component: {fileID: 2072560364}
+  - component: {fileID: 2072560363}
+  - component: {fileID: 2072560366}
+>>>>>>> e6b35bd647c5b4fc7cabb41b43fb37a530a0bf3e:Assets/Scenes/Bec TESTING.unity
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -399,3 +406,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072560366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072560362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815d2d408e243934abcca4330e29b13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
