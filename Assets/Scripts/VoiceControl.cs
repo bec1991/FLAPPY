@@ -20,8 +20,14 @@ public class VoiceControl : MonoBehaviour
 
     void Start()
     {
-    
-    soundSource = GetComponent<AudioSource>();
+        
+            foreach (var device in Microphone.devices)
+            {
+                Debug.Log("Name: " + device);
+            }
+
+
+            soundSource = GetComponent<AudioSource>();
 
     //Voice commands for playing sound
     keyActs.Add("please say something", Talk);
