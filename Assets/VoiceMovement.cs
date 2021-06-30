@@ -14,7 +14,7 @@ public class VoiceMovement : MonoBehaviour
 
     void Start()
     {
-        actions.Add("forward", Forward);
+    
         actions.Add("down", Down);
         actions.Add("Up", Up);
 
@@ -34,11 +34,7 @@ public class VoiceMovement : MonoBehaviour
 
     }
 
-    private void Forward()
-    {
-        transform.Translate(1,0,0);
-    }
-
+   //functions for letting us move down and up 
     private void Down()
     {
         transform.Translate(0,-1,0);
