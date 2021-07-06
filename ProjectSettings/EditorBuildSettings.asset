@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bec TESTING.unity
     guid: 732d4f80b4f26574985ba12bf0d1832a
+  - enabled: 1
+    path: Assets/Scenes/OptionsMenu.unity
+    guid: b87895b8d53742746af37143dc0e1fd6
   m_configObjects: {}
