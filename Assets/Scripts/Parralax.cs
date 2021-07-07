@@ -15,7 +15,7 @@ public class Parralax : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
     	//background repeating itself - how far we have moived relative to the camera
     	float temp = (cam.transform.position.x * (1- parralaxEffect));
