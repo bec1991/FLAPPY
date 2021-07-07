@@ -37,12 +37,12 @@ public class VoiceMovement : MonoBehaviour
    //functions for letting us move down and up 
     private void Down()
     {
-        transform.Translate(0,-1,0);
+        transform.Translate(0,-3,0);
     }
 
     private void Up()
     {
-        transform.Translate(0,1,0);
+        transform.Translate(0,3,0);
     }
 
 }

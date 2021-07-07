@@ -10,8 +10,8 @@ public class Spawner : MonoBehaviour
     public float currentSpeed = 5f;
     public float obsSpeed = 5f;
     public float speedInc = 0.1f;
-
     public int height = 3;
+    
 
     // Update is called once per frame
     void Update()
