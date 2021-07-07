@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Parralax : MonoBehaviour
 {
-    private float length, startpos; 
+    public float length;
+    public float startpos = 0;   
+    
     public GameObject cam;
     public float parralaxEffect;
 
@@ -15,14 +17,14 @@ public class Parralax : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-    	//background repeating itself - how far we have moived relative to the camera
-    	float temp = (cam.transform.position.x * (1- parralaxEffect));
-        float dist = (cam.transform.position.x * parralaxEffect);
-        transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
+    void FixedUpdate()
+    {   //move object
+    	transform.position -= new Vector3(parralaxEffect, 0,0);	
 
-        if(temp > startpos + length) startpos += length;
-        else if (temp < startpos - length) startpos -= length;	
+        if(transform.position.x<=startpos+length)
+        {
+            transform.position+= new Vector3(length,0,0);
+        }
     }
+
 }
