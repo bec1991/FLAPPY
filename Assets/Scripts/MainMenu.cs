@@ -7,12 +7,18 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("FirstLevel");
     }
 
     public void GoToOptionsMenu()
     {
         SceneManager.LoadScene("OptionsMenu");
+
+    }
+
+    public void GoToHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
 
     }
 

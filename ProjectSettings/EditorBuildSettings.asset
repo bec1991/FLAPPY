@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: ba2aea5ea87f19a47a29ab861cc8b8bb
   - enabled: 1
+    path: Assets/Scenes/FirstLevel.unity
+    guid: fff472de23cd5aa46a97702f9c1d71f6
+  - enabled: 1
     path: Assets/Scenes/Bec TESTING.unity
     guid: 732d4f80b4f26574985ba12bf0d1832a
   - enabled: 1
     path: Assets/Scenes/OptionsMenu.unity
     guid: b87895b8d53742746af37143dc0e1fd6
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+    guid: d9b1bd4b8a6983c45bef07b55947bf35
   m_configObjects: {}
