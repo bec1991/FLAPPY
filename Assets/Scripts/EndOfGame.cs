@@ -17,4 +17,5 @@ public class EndOfGame : MonoBehaviour
     	Debug.Log("Restart TIME");
         SceneManager.LoadScene(2);
     }
+
 }

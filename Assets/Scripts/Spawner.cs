@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
         WoodObstacle();
 
         time += Time.deltaTime;
-        Debug.Log(time);
+        //Debug.Log(time);
 
     }
 
@@ -46,6 +46,8 @@ public class Spawner : MonoBehaviour
            yield return new WaitForSeconds(10);
         }
     }
+
+  
 
    
 }

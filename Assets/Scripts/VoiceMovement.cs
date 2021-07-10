@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using System; 
 using UnityEngine.Windows.Speech;
+using UnityEngine.SceneManagement;
 
 public class VoiceMovement : MonoBehaviour
 {   
@@ -11,6 +12,8 @@ public class VoiceMovement : MonoBehaviour
     private KeywordRecognizer keywordRecognizer;
     //have to add in a dictionary with keywords in functions - 
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
+
+
 
     void Start()
     {
@@ -43,6 +46,13 @@ public class VoiceMovement : MonoBehaviour
     private void Up()
     {
         transform.Translate(0,3,0);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision2D)
+    {
+
+        SceneManager.LoadScene(6);
+        Debug.Log("Strike");
     }
 
 }

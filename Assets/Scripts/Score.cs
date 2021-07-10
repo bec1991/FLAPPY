@@ -8,35 +8,78 @@ public class Score : MonoBehaviour
     public Text scoreText;
     public int scoreNum;
     public GameObject player;
-    public GameObject obstacle;
     public Collider2D obsColl;
-    public List<AudioClip> voiceList;
+    public AudioClip[] voiceListF;
+    public AudioClip[] voiceListM;
+    public AudioSource say;
+    public bool isFemaleSelected = true;
 
 
-   // public void Awake()
-   // {
-   //     scoreText = transform.Find("scoreText").GetComponent<Text>();
-   // }
+    public static int score = 0;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        score = 0;
+    
+
+    }
+
+    private void Update()
+    {
+        GetComponent<UnityEngine.UI.Text>().text = "Score: " + score.ToString();
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void VoiceOvers()
     {
-        
-    }
-    public void OnTriggerEnter(Collider2D obsColl)
-    {
-       
-        scoreNum ++;
-        scoreText.text = "Score: " + scoreNum;
-    }
+        if (score == 1)
+        {
+            if (isFemaleSelected == true)
+            {
+                say.clip = voiceListF[0];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+            if (isFemaleSelected == false)
+            {
+                say.clip = voiceListM[0];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+        }
+        if (score == 2)
+        {
+            if (isFemaleSelected == true)
+            {
+                say.clip = voiceListF[1];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+            if (isFemaleSelected == false)
+            {
+                say.clip = voiceListM[1];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+        }
+        if (score == 3)
+        {
+            if (isFemaleSelected == true)
+            {
+                say.clip = voiceListF[2];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+            if (isFemaleSelected == false)
+            {
+                say.clip = voiceListM[2];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+        }
 
 
+    }
 }
 
 
