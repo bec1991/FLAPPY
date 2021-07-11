@@ -4,9 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class EndOfGame : MonoBehaviour
 {
-    
 
-   public void QuitGame()
+
+
+    public void Start()
+    {
+       
+        
+    }
+
+
+
+    public void QuitGame()
     {
         Debug.Log ("quit");
         Application.Quit();
@@ -16,6 +25,10 @@ public class EndOfGame : MonoBehaviour
     {
     	Debug.Log("Restart TIME");
         SceneManager.LoadScene("Main Menu");
+
+        Score.score = 0f;
+
+
     }
 
 }

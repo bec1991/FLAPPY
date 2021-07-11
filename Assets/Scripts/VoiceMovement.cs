@@ -51,7 +51,7 @@ public class VoiceMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
 
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(1);
         Debug.Log("Strike");
     }
 

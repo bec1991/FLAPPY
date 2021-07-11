@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
     public AudioSource say;
    public OptionsMenu options;
     public bool isFemaleSelected;
-    public static int score = 0;
+    public static float score = 0;
 
     private void Start()
     {
@@ -33,10 +33,15 @@ public class Score : MonoBehaviour
         isFemaleSelected = options.isFemaleSelected;
     }
 
-    public static int ScoreText()
+    public float ScoreText()
     {
         return score = 0;
 
+
+    }
+    public float ResetScore()
+    {
+        return score = 0;
 
     }
 
@@ -73,7 +78,7 @@ public class Score : MonoBehaviour
                 //Debug.Log("WEEEEE!!!");
             }
         }
-        if (score == 5)
+        if (score == 10)
         {
             if (isFemaleSelected == true)
             {
@@ -88,7 +93,7 @@ public class Score : MonoBehaviour
                 //Debug.Log("WEEEEE!!!");
             }
         }
-        if (score == 10)
+        if (score == 20)
         {
             if (isFemaleSelected == true)
             {
@@ -103,7 +108,7 @@ public class Score : MonoBehaviour
                 //Debug.Log("WEEEEE!!!");
             }
         }
-        if (score == 20)
+        if (score == 30)
         {
             if (isFemaleSelected == true)
             {
@@ -118,7 +123,7 @@ public class Score : MonoBehaviour
                 //Debug.Log("WEEEEE!!!");
             }
         }
-        if (score == 30)
+        if (score == 40)
                     {
                         if (isFemaleSelected == true)
                         {
