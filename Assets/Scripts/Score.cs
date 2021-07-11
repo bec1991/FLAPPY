@@ -69,7 +69,7 @@ public class Score : MonoBehaviour
                 //Debug.Log("WEEEEE!!!");
             }
         }
-        if (score == 3)
+        if (score == 5)
         {
             if (isFemaleSelected == true)
             {
@@ -84,6 +84,51 @@ public class Score : MonoBehaviour
                 //Debug.Log("WEEEEE!!!");
             }
         }
+        if (score == 10)
+        {
+            if (isFemaleSelected == true)
+            {
+                say.clip = voiceListF[3];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+            if (isFemaleSelected == false)
+            {
+                say.clip = voiceListM[2];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+        }
+        if (score == 20)
+        {
+            if (isFemaleSelected == true)
+            {
+                say.clip = voiceListF[4];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+            if (isFemaleSelected == false)
+            {
+                say.clip = voiceListM[2];
+                say.Play();
+                //Debug.Log("WEEEEE!!!");
+            }
+        }
+        if (score == 30)
+                    {
+                        if (isFemaleSelected == true)
+                        {
+                            say.clip = voiceListF[5];
+                            say.Play();
+                            //Debug.Log("WEEEEE!!!");
+                        }
+                        if (isFemaleSelected == false)
+                        {
+                            say.clip = voiceListM[2];
+                            say.Play();
+                            //Debug.Log("WEEEEE!!!");
+                        }
+                    }
 
 
     }
