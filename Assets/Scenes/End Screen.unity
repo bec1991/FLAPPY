@@ -135,7 +135,8 @@ GameObject:
   - component: {fileID: 21398067}
   - component: {fileID: 21398066}
   - component: {fileID: 21398065}
-  m_Layer: 0
+  - component: {fileID: 21398064}
+  m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,6 +163,18 @@ RectTransform:
   m_AnchoredPosition: {x: 169.1, y: 74.4}
   m_SizeDelta: {x: 130.3407, y: 32.1983}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &21398064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21398062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea10f632fd36b045bc45900d3c428d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &21398065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,7 +996,7 @@ GameObject:
   - component: {fileID: 717988611}
   - component: {fileID: 717988613}
   - component: {fileID: 717988612}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1202,7 +1215,7 @@ GameObject:
   - component: {fileID: 1055887204}
   - component: {fileID: 1055887203}
   - component: {fileID: 1055887202}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,7 +1486,7 @@ GameObject:
   - component: {fileID: 1475294388}
   - component: {fileID: 1475294390}
   - component: {fileID: 1475294389}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
