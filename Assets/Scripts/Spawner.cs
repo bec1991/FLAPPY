@@ -38,25 +38,13 @@ public class Spawner : MonoBehaviour
     {
         if (time > queueTime)
         {
-            if (time > queueTime)
-            {
+            
                 GameObject go = Instantiate(obstacle, transform.position, Quaternion.identity, transform);
                 go.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
 
                 time = 0;
 
                 Destroy(go, 10);
-            }
-            if (time > queueTime)
-            {
-
-                GameObject go = Instantiate(caveObstacle, transform.position, Quaternion.identity, transform);
-                go.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
-
-                time = 0;
-
-                Destroy(go, 10);
-            }
 
         }
 

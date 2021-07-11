@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public void PlayGameWoods()
     {
         SceneManager.LoadScene("FirstLevel");
+    }
+
+    public void PlayGameCave()
+    {
+        SceneManager.LoadScene("Bec TESTING");
     }
 
     public void GoToOptionsMenu()

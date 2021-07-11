@@ -12,12 +12,16 @@ public class Score : MonoBehaviour
     public AudioClip[] voiceListF;
     public AudioClip[] voiceListM;
     public AudioSource say;
-    public bool isFemaleSelected = true;
+   public OptionsMenu options;
+    public bool isFemaleSelected;
     public static int score = 0;
 
     private void Start()
     {
-
+        options = FindObjectOfType<OptionsMenu>();
+        Debug.Log(options.isFemaleSelected);
+       
+            
         ScoreText();
 
 
@@ -26,7 +30,7 @@ public class Score : MonoBehaviour
     private void Update()
     {
         GetComponent<UnityEngine.UI.Text>().text = "Score: " + score.ToString();
-        
+        isFemaleSelected = options.isFemaleSelected;
     }
 
     public static int ScoreText()
