@@ -417,6 +417,8 @@ GameObject:
   - component: {fileID: 691038456}
   - component: {fileID: 691038457}
   - component: {fileID: 691038458}
+  - component: {fileID: 691038460}
+  - component: {fileID: 691038459}
   m_Layer: 6
   m_Name: Bird
   m_TagString: Untagged
@@ -547,6 +549,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!95 &691038459
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691038452}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b4cfecd613d804783a3c43458af30f3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &691038460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691038452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79451e378cb525341a428a1056130c3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &831505382
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,10 +641,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   queueTime: 1.5
   obstacle: {fileID: 4775349771101752454, guid: 45f212dda847d11489e1cffdd6bae2ad, type: 3}
+  caveObstacle: {fileID: 0}
   currentSpeed: 5
   obsSpeed: 5
   speedInc: 0.2
   height: 3
+  scoreText: {fileID: 1047504478}
 --- !u!4 &956309189
 Transform:
   m_ObjectHideFlags: 0

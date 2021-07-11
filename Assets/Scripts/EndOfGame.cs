@@ -15,7 +15,7 @@ public class EndOfGame : MonoBehaviour
     public void RestartGame()
     {
     	Debug.Log("Restart TIME");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Main Menu");
     }
 
 }

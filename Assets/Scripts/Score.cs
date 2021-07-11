@@ -13,14 +13,13 @@ public class Score : MonoBehaviour
     public AudioClip[] voiceListM;
     public AudioSource say;
     public bool isFemaleSelected = true;
-
-
     public static int score = 0;
 
     private void Start()
     {
-        score = 0;
-    
+
+        ScoreText();
+
 
     }
 
@@ -29,6 +28,14 @@ public class Score : MonoBehaviour
         GetComponent<UnityEngine.UI.Text>().text = "Score: " + score.ToString();
         
     }
+
+    public static int ScoreText()
+    {
+        return score = 0;
+
+
+    }
+
 
     public void VoiceOvers()
     {
